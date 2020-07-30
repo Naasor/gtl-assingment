@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            background-color: rgb(236, 233, 233);
+            border: 1px #808080;
+            border-radius: 5px;
+            margin: 2.5em auto; 
+            padding: 2em;
+        }
+
+        .con-form {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .con-form form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .control {
+            background: #f5f5f5;
+            border: 1px solid #808080;
+            height: 30px;
+            border-radius: 2px;
+            color: #000;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            padding: .8em;
+        }
+
+        #count { 
+            background: #f5f5f5;
+            border: 1px solid #808080;
+            height: 50px;
+            border-radius: 2px;
+            color: #000;
+            font-weight: 700;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            padding: .8em; 
+        } 
+
+        .sub {
+            background: #f5f5f5;
+            border: 1px solid #808080;
+            line-height: 25px;
+            border-radius: 2px;
+            box-shadow: none;
+            color: #000;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            padding: .8em;
+        }
+
+        button {
+            width: 8%;
+            font-size: 1em;
+            line-height: 0.5;
+            height: 30px;
+            background-color: #008800;
+            border: 1px solid #008800;
+            border-radius: 2px;
+            color: #fff;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            transition: .5s ease-in-out;
+        }
+        button:hover {
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid #008800;
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="con-form">
+            <form>
+                <label for="name">First Name</label>
+                    <input type="text" placeholder="Your name.." id="name" class="control">
+                
+                <label for="name">Last Name</label>
+                    <input type="text" placeholder="Your last name.." id="name" class="control">
+                
+                <label for="country">Country</label>
+                    <select id="count" class="control" name="country">
+                        <option value="Australia">Australia</option>
+                        <option value="Benin">Benin</option>
+                        <option value="Burkina-Faso">Burkina-Faso</option>    
+                        <option value="Ghana">Ghana</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Togo">Togo</option>
+                    </select>
+
+                <label for="message">Subject</label>
+                    <textarea name="text" placeholder="Write something.." id="message" rows="4" class="sub"></textarea>
+                
+                <button type="button">Submit</button>
+            </form>
+        </div>
+</body>
+</html>
